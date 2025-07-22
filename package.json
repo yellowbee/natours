@@ -1,0 +1,25 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "Learning node, expreass and mongoDB",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:prod": "nodemon server.js NODE_ENV=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Huang",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "mongodb": "^6.17.0",
+    "mongoose": "^5.13.23",
+    "morgan": "^1.10.0",
+    "validator": "^13.15.15"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
