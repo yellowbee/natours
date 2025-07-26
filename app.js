@@ -38,5 +38,7 @@ const tours = JSON.parse(fs.readFileSync(`${__dirname}/dev-data/data/tours-simpl
 
 app.use('/api/v1/tours', tourRouter);
 app.use('/api/v1/users', userRouter);
-
+app.get('/api/v1/health', (req, res) => {
+  res.status(200).send({"health": true});
+})
 module.exports = app;
