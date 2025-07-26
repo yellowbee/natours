@@ -27,7 +27,7 @@ pipeline {
       }
     }
 
-    stage('Deploy to EC2 B') {
+    stage('Deploy to EC2 natours server') {
       steps {
         sshagent (credentials: [SSH_KEY_CRED_ID]) {
           sh """
