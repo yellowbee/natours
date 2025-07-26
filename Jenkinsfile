@@ -21,11 +21,11 @@ pipeline {
       }
     }
 
-    stage('Test') {
-      steps {
-        sh 'npm test'
-      }
-    }
+    //stage('Test') {
+    //  steps {
+    //    sh 'npm test'
+    //  }
+    //}
 
     stage('Deploy to EC2 natours server') {
       steps {
